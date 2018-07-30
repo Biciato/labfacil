@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard{% endblock %}
+{% block css %}/css/dashboard.css{% endblock %}
+{% block css16 %}/css/dashboard-1600.css{% endblock %}
+{% block css19 %}/css/dashboard-1900.css{% endblock %}
+{% block body %}
+{{ include('dashboard/topnav.html.twig')}}
+{{ include('dashboard/sidenav.html.twig')}}
+{{ include('dashboard/navtab.html.twig')}}
+{% endblock %}
+{% block javascript %}/javascript/dashboard.js{% endblock %}

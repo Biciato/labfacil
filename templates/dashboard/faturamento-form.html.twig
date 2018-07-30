@@ -1,0 +1,97 @@
+<form id="formFat" class="text-center">
+  <!--Dados unidade vinculada-->
+  <div class="row">
+    <div class="col-md-5">
+      <h5 class="font-weight-bold text-left ml-3">A qual unidade é vinculada</h5>
+    </div>
+  </div>
+  <!--Dados Unidade vinculada-->
+  <!--Linha do CNPJ-->
+  <div class="row ml-1 mr-1">
+    <div class="col-md-4">
+      <div class="md-form mb-0">
+        <input type="text" id="cnpjPC" class="form-control validate" placeholder="233231312/123-12" disabled>
+        <label for="cnpjPC" data-error="wrong" data-success="right">CNPJ</label>
+      </div>
+    </div>
+  </div>
+  <!--Linha do CNPJ-->
+  <!--Linha da Razao Social e Nome Fantasia-->
+  <div class="row ml-1 mr-1">
+    <div class="col-md-6">
+      <div class="md-form mb-0">
+        <input type="text" id="razaoSocialPC" class="form-control validate" placeholder="Empresa LTDA" disabled>
+        <label for="razaoSocialPC" data-error="wrong" data-success="right">Razão Social</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="md-form mb-0">
+        <input type="text" id="nomeFantasiaPC" class="form-control validate" placeholder="Empresa X" disabled>
+        <label for="nomeFantasiaPC" data-error="wrong" data-success="right">Nome Fantasia</label>
+      </div>
+    </div>
+  </div>
+  <!--Linha da Razao Social e Nome Fantasia-->
+  <!--Dados Postos de Coleta-->
+  <div class="row mt-5">
+    <div class="col-md-5">
+      <h5 class="font-weight-bold text-left ml-3">Dados Posto de Coleta</h5>
+    </div>
+  </div>
+  <!--Dados Posto de Coleta-->
+  <!--Linha do Nome e Código do PC-->
+  <div class="row ml-1 mr-1">
+    <div class="col-md-4">
+      <div class="md-form mb-0">
+        <input type="text" id="nomePC" class="form-control validate" placeholder="Posto de Coleta X" disabled>
+        <label for="nomePC" data-error="wrong" data-success="right">Nome</label>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="md-form mb-0">
+        <input type="text" id="codPC" class="form-control validate" placeholder="12312312" disabled>
+        <label for="codPC" data-error="wrong" data-success="right">Código</label>
+      </div>
+    </div>
+  </div>
+  <!--Linha do Nome e Código do PC-->
+  <!--Lista de Faturamentos-->
+  <div class="row mt-5">
+    <div class="col-md-5">
+      <h5 class="font-weight-bold text-left ml-3">Lista de Faturamentos</h5>
+    </div>
+  </div>
+  <!--Lista de Faturamentos-->
+  <!--Tabela de Lista de Faturamentos-->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Número</th>
+        <th scope="col">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>R$ 200.00</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>R$ 200.00</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>R$ 200.00</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--Tabela de Lista de Faturamentos-->
+  <!-- Botoes do fim da tab -->
+  <button type="button" class="btn btn-primary btn-rounded waves-effect">Tabelas Preços</button>
+  <button type="button" class="btn btn-default btn-rounded waves-effect">Usuários</button>
+  <button type="button" class="btn btn-info btn-rounded waves-effect">Bloquear</button>
+  <button type="button" class="btn btn-success btn-rounded waves-effect">Observações</button>
+  <button type="button" class="btn btn-warning btn-rounded waves-effect">Editar</button>
+  <button type="button" class="btn btn-danger btn-rounded waves-effect">Salvar</button>
+  <!-- Botoes do fim da tab -->
+</form>

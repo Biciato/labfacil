@@ -1,0 +1,22 @@
+#sidenav {
+  width: 15%;
+}
+
+#topnav ul li:last-child {
+  width: 8%;
+  margin-left: 3%;
+}
+
+#navtabs {
+  width: 85%;
+}
+
+#navtabs nav {
+  width: 80%;
+  margin: 4% 8% 2% 10%;
+}
+
+#formUnid, #formPC {
+  max-width: 89%;
+  margin-left: 5%;
+}

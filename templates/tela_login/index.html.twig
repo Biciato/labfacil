@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login{% endblock %}
+{% block css %}/css/tela_login.css{% endblock %}
+{% block css16 %}/css/tela_login-1600.css{% endblock %}
+{% block css19 %}/css/tela_login-1900.css{% endblock %}
+
+{% block body %}
+  <div class="container-fluid text-center">
+    <figure class="figure">
+      <img src="/img/logo-lab.png" class="figure-img img-fluid" alt="..." height="40" width="150">
+      <figcaption class="figure-caption"></figcaption>
+    </figure>
+    <div class="card card-cascade narrower">
+          <div class="view view-cascade gradient-card-header info-color-dark p-0">
+            <div class="row d-flex justify-content-center">
+              <h3 class="white-text mb-3 pt-3 font-weight-bold">Log in</h3>
+            </div>
+          </div>
+          <div class="card-body mx-4 mt-4">
+            <div class="md-form">
+                <input type="text" id="Form-email3" class="form-control">
+                <label for="Form-email3">Usuário</label>
+            </div>
+            <div class="md-form pb-1 pb-md-3">
+                <input type="password" id="Form-pass3" class="form-control">
+                <label for="Form-pass3">Senha</label>
+            </div>
+            <div class="row d-flex align-items-center mb-4">
+
+                <!--Grid column-->
+                <div class="col d-flex justify-content-center">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-grey btn-rounded z-depth-1a">ENTRAR</button>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>
+          </div>
+        </div>
+  </div>
+{% endblock %}
+{% block javascript %}/javascript/tela_login.js{% endblock %}

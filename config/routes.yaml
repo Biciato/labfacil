@@ -1,0 +1,7 @@
+dashboard:
+   path: /dashboard
+   controller: App\Controller\DashboardController::index
+
+tela_login:
+   path: /telalogin
+   controller: App\Controller\TelaLoginController::index

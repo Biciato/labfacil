@@ -1,0 +1,274 @@
+<section class="section mt-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <!--/. Card da foto -->
+        <div class="card card-cascade narrower">
+          <!--Card image-->
+          <div class="view view-cascade gradient-card-header mdb-color lighten-3">
+            <h5 class="mb-0 font-weight-bold">Editar Foto</h5>
+          </div>
+          <!--/Card image-->
+          <!-- Card content -->
+          <div class="card-body card-body-cascade text-center">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="User Photo" class="z-depth-1 mb-3 mx-auto" />
+            <p class="text-muted"><small>A foto do perfil será mudada automaticamente</small></p>
+            <div class="row justify-content-center">
+              <button class="btn btn-info btn-rounded btn-sm">Upload Nova Foto</button>
+              <button class="btn btn-danger btn-rounded btn-sm">Deletar</button>
+            </div>
+          </div>
+          <!-- Botao Cadastrar Conta -->
+          <div class="card-footer text-center">
+            <p class="text-center">Cadastre aqui sua conta bancária para receber comissões de indicações</p>
+            <button id="cadastrarConta" class="btn btn-success align-self-center btn-rounded btn-sm">Cadastrar Conta Bancária</button>
+          </div>
+          <!-- Botao Cadastrar Conta -->
+        </div>
+        <!--/. Card da foto -->
+        <!--/. Card da Conta -->
+        <div id="contaBancaria" class="card card-cascade narrower mt-5">
+          <!--/. Card Header -->
+          <div class="view view-cascade gradient-card-header mdb-color lighten-3">
+              <h5 class="mb-0 font-weight-bold">Cadastrar Conta</h5>
+          </div>
+          <!--/. Card Header -->
+          <!--/. Input dos dados da conta -->
+          <div class="card-body card-body-cascade text-center">
+            <h6>Dados Bancários: </h6>
+            <div class="row justify-content-center">
+              <div class="md-form" style="margin:1px;">
+                <input id="banco" class="form-control" type="text">
+                <label for="banco">Banco</label>
+              </div>
+              <div class="md-form" style="margin:1px;">
+                <input id="agencia" class="form-control" type="text">
+                <label for="agencia">Agência</label>
+              </div>
+              <div class="md-form" style="margin:1px;">
+                <input id="contaInput" class="form-control" type="text">
+                <label for="contaInput">Conta</label>
+              </div>
+              <div class="md-form" style="margin:1px;">
+                <input id="favorecido" class="form-control" type="text">
+                <label for="favorecido">Favorecido</label>
+              </div>
+              <div class="md-form" style="margin:1px;">
+                <input id="cpfFav" class="form-control" type="text">
+                <label for="cpfFav">CPF do Favorecido</label>
+              </div>
+            </div>
+        </div>
+          <!--/. Input dos dados da conta -->
+          <!--/. Botao Salvar -->
+          <div class="card-footer text-center">
+            <button id="contaSalvar" type="submit" class="btn btn-success align-self-center btn-rounded btn-sm">Salvar</button>
+          </div>
+          <!--/. Botao Salvar -->
+        </div>
+        <!--/. Card da Conta -->
+      </div>
+      <div class="col-md-9">
+        <!-- Card das informacoes do Cadastro -->
+        <div class="card card-cascade narrower mb-5">
+          <!-- Card header -->
+          <div class="view view-cascade gradient-card-header mdb-color lighten-3">
+              <h5 class="mb-0 font-weight-bold">Cadastro</h5>
+          </div>
+          <!-- Card header -->
+          <!-- informacoes cadastradas -->
+          <div class="card-body card-body-cascade text-center">
+            <!-- Form -->
+            <form>
+              <!--Dados Pessoais-->
+              <div class="row">
+                <div class="col-md-5">
+                  <h5 class="font-weight-bold text-left ml-3">Dados Pessoais</h5>
+                </div>
+              </div>
+              <!--Dados Pessoais-->
+              <!--Linha do CPF, RG, Data de Nascimento, idade e sexo-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="text" id="cpf" class="form-control" placeholder="312.463.288-52" disabled>
+                    <label for="cpf" data-error="wrong" data-success="right">CPF</label>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="text" id="rg" class="form-control" placeholder="24.717.891-3" disabled>
+                    <label for="rg" data-error="wrong" data-success="right">RG</label>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="text" id="dataNasc" class="form-control" placeholder="26/11/1984" disabled>
+                    <label for="dataNasc" data-error="wrong" data-success="right">Data de Nascimento</label>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <div class="md-form mb-0">
+                    <input type="text" id="idade" class="form-control" placeholder="33" disabled>
+                    <label for="idade" data-error="wrong" data-success="right">Idade</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="md-form mb-0">
+                    <input type="text" id="sexo" class="form-control" placeholder="feminino" disabled>
+                    <label for="sexo" data-error="wrong" data-success="right">Sexo</label>
+                  </div>
+                </div>
+              </div>
+              <!--Linha do CPF, RG, Data de Nascimento, idade e sexo-->
+              <!--Linha do Nome-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="nome" class="form-control" placeholder="Maria Eduarda da Silva" disabled>
+                    <label for="nome" data-error="wrong" data-success="right">Nome</label>
+                  </div>
+                </div>
+              </div>
+              <!--Linha do Nome-->
+              <!--Linha do Email-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="email" id="emailPrincipal" class="form-control" placeholder="mariaeduarda@gmail.com" disabled>
+                    <label for="emailPrincipal" data-error="wrong" data-success="right">E-mail Principal</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="email" id="emailSecundario" class="form-control" placeholder="mariaeduarda@hotmail.com" disabled>
+                    <label for="emailSecundario" data-error="wrong" data-success="right">E-mail Secundário</label>
+                  </div>
+                </div>
+              </div>
+              <!--Linha do Email-->
+              <!--Linha do Telefone-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="tel" id="telPrincipal" class="form-control" placeholder="(19) 3466-7156" disabled></input>
+                    <label for="telPrincipal" data-error="wrong" data-success="right">Telefone 1</label>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="tel" id="telSecundario" class="form-control" placeholder="(19) 3476-1223" disabled></input>
+                    <label for="telSecundario" data-error="wrong" data-success="right">Telefone 2</label>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="tel" id="celPrincipal" class="form-control" placeholder="(19) 99216-1228" disabled></input>
+                    <label for="celPrincipal" data-error="wrong" data-success="right">Celular 1</label>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="tel" id="celSecundario" class="form-control" placeholder="(19) 99154-7408" disabled></input>
+                    <label for="celSecundario" data-error="wrong" data-success="right">Celular 2</label>
+                  </div>
+                </div>
+              </div>
+              <!--Linha do Telefone-->
+              <!--Endereço-->
+              <div class="row mt-5 ml-1 mr-1">
+                <div class="col-md-5">
+                  <h5 class="font-weight-bold text-left">Endereço</h5>
+                </div>
+              </div>
+              <!--Endereço-->
+              <!--Linha do CEP-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="text" id="cep" class="form-control" placeholder="13472-380" disabled>
+                    <label for="cep" data-error="wrong" data-success="right">CEP</label>
+                  </div>
+                </div>
+              </div>
+              <!--Linha do CEP-->
+              <!--Linha da Rua, Numero e complemento-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-5">
+                  <div class="md-form mb-0">
+                    <input type="text" id="logradouro" class="form-control" placeholder="Rua São Joaquim" disabled>
+                    <label for="logradouro" data-error="wrong" data-success="right">Logradouro</label>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="text" id="numero" class="form-control" placeholder="890" disabled>
+                    <label for="numero" data-error="wrong" data-success="right">Número</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="md-form mb-0">
+                    <input type="text" id="complemento" class="form-control" placeholder="casa 71" disabled>
+                    <label for="complemento" data-error="wrong" data-success="right">Complemento</label>
+                  </div>
+                </div>
+              </div>
+              <!--Linha da Rua, Numero e complemento-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-5">
+                  <div class="md-form mb-0">
+                    <input type="text" id="bairro" class="form-control" placeholder="Cariobinha" disabled>
+                    <label for="bairro" data-error="wrong" data-success="right">Bairro</label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="md-form mb-0">
+                    <input type="text" id="cidade" class="form-control" placeholder="Americana" disabled>
+                    <label for="cidade" data-error="wrong" data-success="right">Cidade</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="md-form mb-0">
+                    <input type="text" id="estado" class="form-control" placeholder="SP" disabled>
+                    <label for="estado" data-error="wrong" data-success="right">Estado</label>
+                  </div>
+                </div>
+              </div>
+              <!--Linha da Rua, Numero e complemento-->
+              <!--Login-->
+              <div class="row mt-5 ml-1 mr-1">
+                <div class="col-md-5">
+                  <h5 class="font-weight-bold text-left">Login</h5>
+                </div>
+              </div>
+              <!--Login-->
+              <div class="row ml-1 mr-1">
+                <div class="col-md-3">
+                  <div class="md-form mb-0">
+                    <input type="text" id="login" class="form-control" placeholder="31246328852" disabled>
+                    <label for="login" data-error="wrong" data-success="right">Login</label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="md-form mb-0">
+                    <input type="text" id="senha" class="form-control" placeholder="**********" disabled>
+                    <label for="senha" data-error="wrong" data-success="right">Senha</label>
+                  </div>
+                </div>
+              </div>
+              <!--Botao Editar-->
+              <div class="row justify-content-center ml-1 mr-1">
+                  <div class="col-md-6 text-center my-4">
+                    <button id="editarDados" class="btn btn-info btn-rounded">Editar Dados</button>
+                  </div>
+              </div>
+              <!--Botao Editar-->
+            </form>
+            <!-- Form -->
+          </div>
+        </div>
+        <!-- Card das informacoes do Cadastro -->
+      </div>
+    </div>
+  </div>
+</section>
