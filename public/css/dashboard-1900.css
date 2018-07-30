@@ -17,7 +17,7 @@
   margin: 4% 9% 3% 9%;
 }
 
-#formUnid, #formPC, #formFat, #formHor, #novoUser {
+#formUnid, #formPC, #formFat, #formHor, #novoUser, #listaUsers {
   max-width: 72%;
   margin-left: 15%;
 }
