@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $('#clienteNovo').hide();
+
   $('a').click(function(){
     var hide = $('#sidenav > ul > li > div').css('display','none');
     if (this.id == "rotinaDiaria"){
@@ -46,5 +48,10 @@ $(document).ready(function(){
     $('#panel5 > div').hide();
     $('#panel5 > form').hide();
     $('#formHor').css('display','block');
+  });
+
+  $('#admUser').click(function() {
+    $('nav').hide();
+    $('#clienteNovo').show();
   });
 });
