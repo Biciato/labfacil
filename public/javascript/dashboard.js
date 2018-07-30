@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-  $('#clienteNovo').hide();
+  $('#novoUser').hide();
+  $('#listaUsers').hide();
 
   $('a').click(function(){
     var hide = $('#sidenav > ul > li > div').css('display','none');
@@ -52,6 +53,13 @@ $(document).ready(function(){
 
   $('#admUser').click(function() {
     $('nav').hide();
-    $('#clienteNovo').show();
+    $('#listaUsers').hide();
+    $('#novoUser').show();
+  });
+
+  $('#admUserList').click(function() {
+    $('nav').hide();
+    $('#novoUser').hide();
+    $('#listaUsers').show();
   });
 });
