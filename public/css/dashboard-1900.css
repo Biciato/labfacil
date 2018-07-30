@@ -17,7 +17,19 @@
   margin: 4% 9% 3% 9%;
 }
 
-#formUnid, #formPC, #formFat, #formHor {
+#formUnid, #formPC, #formFat, #formHor, #clienteNovoTela1 {
   max-width: 72%;
   margin-left: 15%;
+}
+
+#colunaSexo {
+  width: 293px !important;
+}
+
+#colunaSexo .form .form-inline .form-check {
+  margin-left: 34px;
+}
+
+#sexoForm {
+  margin-left: 124px !important;
 }
