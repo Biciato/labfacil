@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   $('#novoUser').hide();
   $('#listaUsers').hide();
+  $('.pt-3-half').mask('00:00');
 
   $('a').click(function(){
     var hide = $('#sidenav > ul > li > div').css('display','none');

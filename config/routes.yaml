@@ -5,3 +5,7 @@ dashboard:
 tela_login:
    path: /telalogin
    controller: App\Controller\TelaLoginController::index
+
+home:
+  path: /
+  controller: App\Controller\HomeController::home   
